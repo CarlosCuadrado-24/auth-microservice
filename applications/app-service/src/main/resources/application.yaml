@@ -45,3 +45,8 @@ springdoc:
     path: /swagger-ui.html
     display-request-duration: true
     operations-sorter: alpha
+
+logging:
+  level:
+    root: INFO
+    co.com.auth: DEBUG
