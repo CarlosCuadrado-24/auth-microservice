@@ -1,6 +1,7 @@
 package co.com.auth.api.dtos;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode
 public class RequestUserDTO {
     private String name;
     private String lastName;

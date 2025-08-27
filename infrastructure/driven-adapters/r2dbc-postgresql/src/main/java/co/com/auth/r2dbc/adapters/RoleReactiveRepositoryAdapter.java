@@ -13,13 +13,13 @@ import reactor.core.publisher.Mono;
 
 @Slf4j
 @Repository
-public class roleReactiveRepositoryAdapter extends ReactiveAdapterOperations<
+public class RoleReactiveRepositoryAdapter extends ReactiveAdapterOperations<
         Role,
         RoleEntity,
         Long,
         IRoleReactiveRepository
         > implements RoleRepository {
-    public roleReactiveRepositoryAdapter(IRoleReactiveRepository repository, ObjectMapper mapper) {
+    public RoleReactiveRepositoryAdapter(IRoleReactiveRepository repository, ObjectMapper mapper) {
         super(repository, mapper, d -> mapper.map(d, Role.class));
     }
 

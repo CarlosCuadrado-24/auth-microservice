@@ -13,12 +13,12 @@ import reactor.core.publisher.Mono;
 
 @Slf4j
 @Repository
-public class userReactiveRepositoryAdapter extends ReactiveAdapterOperations<
+public class UserReactiveRepositoryAdapter extends ReactiveAdapterOperations<
     User, UserEntity,
     Long,
         IUserReactiveRepository
 > implements UserRepository {
-    public userReactiveRepositoryAdapter(IUserReactiveRepository repository, ObjectMapper mapper) {
+    public UserReactiveRepositoryAdapter(IUserReactiveRepository repository, ObjectMapper mapper) {
         super(repository, mapper, d -> mapper.map(d, User.class));
     }
 
